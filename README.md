@@ -1,113 +1,32 @@
-App_MercadoLivre_Pesquisas/
-├── server.js
-├── package.json
-├── package-lock.json
-├── .vscode/
-│   ├── launch.json
-│   └── settings.json
-├── .gitignore
-├── README.md
-└── templates/
-    ├── index.html
-    └── result.html
-```
+Pesquisa de Tendências do Mercado Livre
 
-# Documentação Técnica
 
-## Descrição
-Este projeto é uma aplicação para realizar pesquisas no Mercado Livre, focada em marketing digital e vendas.
+Descrição
 
-## Funcionalidades
-- Pesquisa de produtos
-- Filtros de pesquisa
-- Visualização de detalhes do produto
-- Comparação de preços
+Este código é uma aplicação de pesquisa de tendências do Mercado Livre utilizando a API do Mercado Livre. Ele permite que os usuários pesquisem produtos e visualizem os resultados em uma tabela HTML.
 
-## Tecnologias Utilizadas
-- Linguagem de Programação: Python
-- Framework: Flask
-- Banco de Dados: SQLite
-- API: Mercado Livre
+Funcionalidades
 
-## Instalação
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/usuario/repo.git
-   ```
-2. Navegue até o diretório do projeto:
-   ```bash
-   cd App_MercadoLivre_pesquisas
-   ```
-3. Crie um ambiente virtual:
-   ```bash
-   python -m venv venv
-   ```
-4. Ative o ambiente virtual:
-   - No Windows:
-     ```bash
-     venv\Scripts\activate
-     ```
-   - No Linux/Mac:
-     ```bash
-     source venv/bin/activate
-     ```
-5. Instale as dependências:
-   ```bash
-   pip install -r requirements.txt
-   ```
+1. Pesquisa de produtos: O usuário pode digitar um termo de pesquisa e o código irá buscar os produtos relacionados na API do Mercado Livre.
+2. Visualização de resultados: Os resultados da pesquisa são exibidos em uma tabela HTML, contendo informações como título, preço, URL e imagem do produto.
+3. Abertura de URLs: Os usuários podem clicar nos links dos produtos para abrir a página do produto no Mercado Livre.
+4. Tratamento de erros: O código trata erros de API e exibe mensagens de erro ao usuário.
 
-## Uso
-1. Inicie a aplicação:
-   ```bash
-   flask run
-   ```
-2. Acesse a aplicação no navegador:
-   ```
-   http://127.0.0.1:5000
-   ```
+Tecnologias Utilizadas
 
-## Contribuição
-1. Faça um fork do projeto
-2. Crie uma branch para sua feature:
-   ```bash
-   git checkout -b minha-feature
-   ```
-3. Commit suas mudanças:
-   ```bash
-   git commit -m 'Minha nova feature'
-   ```
-4. Faça um push para a branch:
-   ```bash
-   git push origin minha-feature
-   ```
-5. Abra um Pull Request
+1. Python: Linguagem de programação utilizada para desenvolver a aplicação.
+2. Tkinter: Biblioteca Python para criar interfaces gráficas.
+3. requests: Biblioteca Python para realizar requisições HTTP.
+4. pandas: Biblioteca Python para manipulação de dados.
+5. API do Mercado Livre: API utilizada para buscar produtos.
 
-## Enviando o Projeto para o GitHub
+Utilização
 
-1. Inicialize um repositório Git:
-   ```bash
-   git init
-   ```
-
-2. Adicione os arquivos ao repositório:
-   ```bash
-   git add .
-   ```
-
-3. Faça o commit das mudanças:
-   ```bash
-   git commit -m "Primeiro commit"
-   ```
-
-4. Adicione o repositório remoto:
-   ```bash
-   git remote add origin https://github.com/usuario/repo.git
-   ```
-
-5. Envie as mudanças para o GitHub:
-   ```bash
-   git push -u origin master
-   ```
+1. Instale as dependências necessárias: pip install tkinter requests pandas
+2. Substitua SUA_CHAVE_AQUI pela sua chave de acesso da API do Mercado Livre.
+3. Execute o código: python pesquisa_mercado_livre.py
+4. Digite um termo de pesquisa e clique em "Pesquisar".
+5. Visualize os resultados na tabela HTML.
 
 ## Licença
 Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
