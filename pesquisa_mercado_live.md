@@ -1,7 +1,6 @@
 Aqui está uma explicação detalhada de cada parte:
 
 ### Importações
-python
 import tkinter as tk
 from PIL import Image, ImageTk
 from tkinter import messagebox
@@ -19,7 +18,6 @@ import os
 - os: Módulo que fornece funções para interagir com o sistema operacional, usado para manipular caminhos de arquivos.
 
 ### Configurações da API do Mercado Livre
-python
 ACCESS_TOKEN = "SUA_CHAVE_AQUI" # Token de acesso
 SITE_ID = "MLB" # Identificador do site do Mercado Livre para o Brasil
 
