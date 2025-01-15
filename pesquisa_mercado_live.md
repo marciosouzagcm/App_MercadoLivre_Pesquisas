@@ -1,4 +1,3 @@
-markdown
 Aqui está uma explicação detalhada de cada parte:
 
 ### Importações
